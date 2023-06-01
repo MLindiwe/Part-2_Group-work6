@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<ImageView
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="537dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/intro"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_editor_absoluteX="0dp">
+
+</ImageView>
+
+<LinearLayout
+android:id="@+id/linearLayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="25dp"
+android:layout_marginTop="50dp"
+android:layout_marginEnd="25dp"
+android:orientation="vertical"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/lato_bold"
+    android:text="Super Timesheet"
+    android:textAlignment="textStart"
+    android:textColor="#FFFFFF"
+    android:textSize="70sp"
+    android:textStyle="bold"
+    android:visibility="visible" />
+
+
+</LinearLayout>
+
+<LinearLayout
+android:id="@+id/linearLayout2"
+android:layout_width="0dp"
+android:layout_height="244dp"
+android:layout_marginTop="232dp"
+android:layout_marginEnd="25dp"
+android:orientation="vertical"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/logo" />
+
+
+</LinearLayout>
+
+
+<TextView
+android:id="@+id/txtv1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_marginTop="16dp"
+android:layout_marginEnd="16dp"
+android:layout_marginBottom="221dp"
+android:fontFamily="@font/lato_bold"
+android:text="Boost your Productivity"
+android:textAlignment="center"
+android:textColor="#7D0292"
+android:textSize="30sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/root"
+tools:ignore="MissingConstraints" />
+
+<Button
+android:id="@+id/btnn"
+android:layout_width="248dp"
+android:layout_height="48dp"
+
+android:background="@drawable/btn1_lgn"
+android:text="login"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/txtv1"
+app:layout_constraintVertical_bias="0.179" />
+
+<Button
+android:id="@+id/btnsignup"
+android:layout_width="242dp"
+android:layout_height="53dp"
+
+android:background="@drawable/btn1_lgn"
+android:text="Create an account"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.498"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/txtv1"
+app:layout_constraintVertical_bias="0.508" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
