@@ -63,19 +63,21 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
+        android:layout_width="379dp"
+        android:layout_height="485dp"
         android:layout_marginTop="232dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="14dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="400px"
+            android:layout_width="319dp"
+            android:layout_height="141dp"
             android:layout_margin="20dp"
             android:background="@drawable/logo" />
 
@@ -119,38 +121,51 @@
         app:layout_constraintBottom_toTopOf="@+id/pwrd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-     <EditText
-    android:id="@+id/pwrd"
-    android:layout_width="311dp"
-    android:layout_height="48dp"
-    android:hint="enter password"
-    android:drawableStart="@drawable/password"
-    android:drawablePadding="15dp"
-    android:textColorHint="#794DB0"
-    android:layout_marginEnd="30dp"
-    android:layout_marginTop="30dp"
-    android:padding="9dp"
-    android:layout_marginStart="30dp"
-    android:textSize="50px"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:ignore="MissingConstraints"
-    tools:layout_editor_absoluteY="522dp" />
+
+    <EditText
+        android:id="@+id/pwrd"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="21dp"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="15dp"
+        android:hint="enter password"
+        android:padding="9dp"
+        android:textColorHint="#794DB0"
+        android:textSize="50px"
+        app:layout_constraintBottom_toTopOf="@+id/btnlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/btnlogin"
         android:layout_width="262dp"
         android:layout_height="0dp"
-
-        android:layout_marginBottom="76dp"
-
+        android:layout_marginBottom="92dp"
         android:text="login now"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="UnknownId" />
 
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="99dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/bckbtn"
+        android:text="back"
 
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UnknownId" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
