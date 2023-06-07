@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Part2_Groupwork"
         tools:targetApi="31">
         <activity
+            android:name=".TimesheetEntry"
+            android:exported="false" />
+        <activity
             android:name=".Main_dashboard"
             android:exported="false" />
         <activity
